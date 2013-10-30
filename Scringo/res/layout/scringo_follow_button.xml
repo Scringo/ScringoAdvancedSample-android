@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/scringoFollowLayout"
+    android:background="@drawable/scringo_button"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/scringoFollowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.scringo.utils.ScringoAutoResizeTextView
+        android:id="@+id/scringoFollowUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="12dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

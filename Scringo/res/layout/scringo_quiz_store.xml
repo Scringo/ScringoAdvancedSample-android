@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scringo_bg"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <com.scringo.features.ScringoTitleBar
+        android:id="@+id/scringoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.scringo.features.quiz.ScringoQuizStoreItem
+                android:id="@+id/scringoQuizStoreItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.scringo.features.quiz.ScringoQuizStoreItem
+                android:id="@+id/scringoQuizStoreItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.scringo.features.quiz.ScringoQuizStoreItem
+                android:id="@+id/scringoQuizStoreItem3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.scringo.features.quiz.ScringoQuizStoreItem
+                android:id="@+id/scringoQuizStoreItem4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/scringo_button_yellow_med"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scringo_coiniconsmallblack2" />
+
+    <TextView
+        android:id="@+id/scringoPurchaseHintsText1"
+        style="@style/blackBoldText"
+        android:layout_marginLeft="2dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_marginLeft="2dp"
+        android:id="@+id/scringoPurchaseHintsText2"
+        style="@style/blackBoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp" />
+    
+</LinearLayout>

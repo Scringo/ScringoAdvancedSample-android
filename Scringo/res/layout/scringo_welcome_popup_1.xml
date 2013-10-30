@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scringoWelcomePopupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scringo_dim_bg"
+        android:padding="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/scringoWelcome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/scringo_welcome_icon_1_left" />
+
+        <ImageView
+            android:id="@+id/scringoWelcome1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/scringo_welcome_icon_1_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

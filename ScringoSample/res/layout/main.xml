@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/background"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" />
+
+    <RelativeLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bar"
+        android:padding="0dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:shadowColor="#000"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/title"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.scringo.ScringoLeftActivationButton
+            android:id="@+id/activationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/riverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navBar"
+        android:background="@drawable/item_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp" >
+
+        <ImageView
+            android:id="@+id/riverImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/river_image_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/riverImage"
+            android:layout_marginLeft="5dp"
+            android:text="@string/river_text"
+            android:textColor="#4494CA"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.scringo.ScringoCommentButton
+            android:id="@+id/riverCommentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/riverImage"
+            android:layout_marginRight="50dp" />
+
+        <com.scringo.ScringoLikeButton
+            android:id="@+id/riverLikeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/riverCommentButton"
+            android:layout_below="@id/riverImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/riverFeedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/riverLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/river_button_text" />
+
+    <Button
+        android:id="@+id/openChatRoomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/riverFeedButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/open_chatroom_button_text" />
+
+    <Button
+        android:id="@+id/openInboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openChatRoomButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/open_inbox_button_text" />
+
+    <com.scringo.ScringoLeftRibbonButton
+        android:id="@+id/activationRibbonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp" />
+
+    <!--
+     	<com.scringo.ScringoRightRibbonButton
+        android:id="@+id/activationRibbonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="350dp" />
+    -->
+
+</RelativeLayout>

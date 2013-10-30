@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/scringo_activation_button"
+    android:id="@+id/scringoActivationLayout"
+    android:clickable="true"
+    android:padding="0dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:id="@+id/scringoLeftDash"
+        android:src="@drawable/scringo_activation_dash" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/scringoIcon"
+        android:src="@drawable/scringo_activation_icon_1" />
+
+    <TextView
+        android:id="@+id/scringoActivationBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textStyle="bold"
+        android:background="@drawable/scringo_home_badge"
+        android:gravity="center_horizontal"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="0dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:id="@+id/scringoRightDash"
+        android:src="@drawable/scringo_activation_dash_left" />
+
+</RelativeLayout>

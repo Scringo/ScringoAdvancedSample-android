@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scringo_bg"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <com.scringo.features.ScringoTitleBar
+            android:id="@+id/scringoTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/scringoRadarListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/scringoList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <ProgressBar
+                android:id="@+id/scringoProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scringoRadarMapLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <fragment
+                android:id="@+id/scringoRadarMapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/scringoRadarMapCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:src="@drawable/scringo_radar_center_button" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/scringoRadarOverlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/scringoRadarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scringo_radar_overlay_top"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <TextView
+                android:id="@+id/scringoRadarOverlayTitle"
+                style="@style/whiteBoldShadowedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/scringoRadarOverlaySubtitle"
+                style="@style/grayShadowedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/scringo_text_radar_overlay_subtitle"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/scringoFollow"
+                style="@style/whiteBoldShadowedText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/scringo_button"
+                android:padding="0dp"
+                android:textSize="14dp"
+                android:text="@string/scringo_text_follow_all_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/scringoRadarOverlay1"
+                style="@style/whiteBoldShadowedText"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scringo_hollow_button"
+                android:padding="0dp"
+                android:textSize="14dp"
+                android:text="@string/scringo_text_radar_dont_show_button" />
+
+            <Button
+                android:id="@+id/scringoRadarOverlay2"
+                style="@style/whiteBoldShadowedText"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/scringo_hollow_button"
+                android:padding="0dp"
+                android:textSize="14dp"
+                android:text="@string/scringo_text_radar_not_now_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

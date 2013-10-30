@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scringoQuizButtonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/scringo_button_grey"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/scringoQuizButtonPercent"
+        style="@style/grayShadowedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/scringoQuizButtonPercentImage"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/scringo_popular_bar"
+        android:visibility="gone" />
+
+    <com.scringo.utils.ScringoAutoResizeTextView
+        android:id="@+id/scringoQuizButtonText"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:singleLine="true"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/scringoQuizDisabled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A0000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scringo_bg"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:id="@+id/scringoAppDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/scringoAppIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:src="@drawable/scringo_apps_empty" />
+
+        <TextView
+            style="@style/whiteShadowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scringo_text_quiz_end_success_message" />
+
+        <ProgressBar
+            android:id="@+id/scringoProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/scringoButton1"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scringo_button"
+            android:padding="0dp"
+            android:text="@string/scringo_text_ok"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/scringoButton2"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scringo_button"
+            android:padding="0dp"
+            android:text="@string/scringo_text_cancel_button"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

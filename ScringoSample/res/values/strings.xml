@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScringoSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_image_view">ImageViewActivity</string>
+    <string name="background">Background</string>
+    <string name="title">Scringo Sample App</string>
+    <string name="river_image_desc">River Image</string>
+    <string name="river_text">A River</string>
+    <string name="river_button_text">Add a River Feed</string>
+    <string name="open_inbox_button_text">Open Inbox Activity</string>
+    <string name="open_chatroom_button_text">Open Chat Rooms Activity</string>
+    <string name="the_image">The Image</string>
+    <string name="image_view_text">An excellent image indeed</string>
+
+</resources>

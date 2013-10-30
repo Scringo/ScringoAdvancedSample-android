@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/scringoChatLoadEarlier"
+        style="@style/grayBoldShadowedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:background="@drawable/scringo_button"
+        android:text="@string/scringo_text_load_earlier_messages_button"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/scringoChatItemTime"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/scringo_dash_line" />
+
+        <TextView
+            android:id="@+id/scringoChatItemTimeText"
+            style="@style/midDarkGrayShadowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/scringo_dash_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scringoChatItemLeftLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/scringoChatItemImage1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY" />
+
+        <com.scringo.utils.ScringoAppImage
+            android:id="@+id/scringoChatAppImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <TextView
+                android:id="@+id/scringoChatItemMessage1"
+                style="@style/darkGrayShadowedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scringo_message_left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/scringoChatItemTime1"
+                style="@style/grayShadowedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scringoChatItemRightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+            <TextView
+                android:id="@+id/scringoChatItemMessage2"
+                style="@style/darkGrayShadowedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scringo_message_right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/scringoChatItemTime2"
+                style="@style/grayShadowedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/scringoChatItemImage2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</LinearLayout>

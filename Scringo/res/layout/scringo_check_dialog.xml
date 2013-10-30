@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/scringo_notification_bg"
+    android:gravity="center"
+    android:id="@+id/scringoCheckLayout"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scringo_notification_check" />
+
+    <TextView
+        android:id="@+id/scringoCheckText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxWidth="100dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</LinearLayout>

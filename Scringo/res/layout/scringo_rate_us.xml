@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/scringoRateUsStar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:id="@+id/scringoRateUsStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:id="@+id/scringoRateUsStar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:id="@+id/scringoRateUsStar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:id="@+id/scringoRateUsStar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        />
+
+</LinearLayout>

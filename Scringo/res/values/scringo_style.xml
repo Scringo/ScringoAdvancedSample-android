@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="shadowedText">
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#000000</item>
+	</style>
+    <style name="upShadowedText">
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowColor">#000000</item>
+	</style>
+    <style name="shadowedWhiteText">
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#ffffff</item>
+	</style>
+    <style name="boldShadowedText" parent="shadowedText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="boldUpShadowedText" parent="upShadowedText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="boldShadowedWhiteText" parent="shadowedWhiteText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="grayShadowedText" parent="shadowedText">
+        <item name="android:textColor">#999</item>
+    </style>
+    <style name="grayUpShadowedText" parent="upShadowedText">
+        <item name="android:textColor">#999</item>
+    </style>
+    <style name="lightGrayShadowedText" parent="shadowedText">
+        <item name="android:textColor">#ccc</item>
+    </style>
+    <style name="darkGrayBoldShadowedText" parent="boldShadowedWhiteText">
+        <item name="android:textColor">#333</item>
+    </style>
+    <style name="darkGrayShadowedText" parent="shadowedWhiteText">
+        <item name="android:textColor">#333</item>
+    </style>
+    <style name="midDarkGrayShadowedText" parent="shadowedText">
+        <item name="android:textColor">#666</item>
+    </style>
+    <style name="grayBoldShadowedText" parent="boldShadowedText">
+        <item name="android:textColor">#999</item>
+    </style>
+    <style name="whiteShadowedText" parent="shadowedText">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="cyanShadowedText" parent="shadowedText">
+        <item name="android:textColor">#cceeff</item>
+    </style>
+    <style name="blackShadowedText" parent="shadowedWhiteText">
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="whiteBoldShadowedText" parent="boldShadowedText">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="blackBoldText">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="blackBoldShadowedText" parent="boldShadowedText">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="yellowBoldShadowedText" parent="boldShadowedText">
+        <item name="android:textColor">#F5FA73</item>
+    </style>
+    <style name="whiteBoldUpShadowedText" parent="boldUpShadowedText">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="screenName" parent="whiteBoldShadowedText">
+        <item name="android:textSize">18dp</item>
+    </style>
+    
+</resources>

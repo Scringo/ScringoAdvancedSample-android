@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scringo_bg"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <com.scringo.features.ScringoTitleBar
+        android:id="@+id/scringoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/scringoPanelMakeTheBest"
+            style="@style/grayShadowedText"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:gravity="bottom|center_horizontal" />
+
+        <TextView
+            android:id="@+id/scringoPanelConnectWith"
+            style="@style/grayShadowedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/scringo_text_make_the_most_connect" />
+
+        <Button
+            android:id="@+id/scringoConnectFacebook"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/scringo_facebook_connect_big"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/scringo_text_facebook_connect_title_2"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/scringoConnectTwitter"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/scringo_twitter_connect_big"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/scringo_text_twitter_connect_title_2"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/scringoLogin"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/scringo_email_connect_big"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/scringo_text_login_with_email"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/scringoProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/scringo_dash_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            style="@style/grayShadowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scringo_text_dont_have_an_account"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/scringoSignUp"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/scringo_button"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="0dp"
+            android:text="@string/scringo_text_sign_up"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

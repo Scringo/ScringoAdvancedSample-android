@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scringoActivationLayout"
+    android:layout_width="47.5dp"
+    android:layout_height="52dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/scringo_activation_ribbon_right" />
+
+    <RelativeLayout
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/scringoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/scringo_activation_icon_1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/scringoActivationBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/scringo_home_badge"
+        android:gravity="center_horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

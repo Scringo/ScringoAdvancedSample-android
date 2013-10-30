@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/scringo_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <Button
+        android:id="@+id/scringoBlock"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scringo_red_button"
+        android:padding="0dp"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/scringoReport"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/scringo_red_button"
+        android:padding="0dp"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/scringoClose"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/scringo_button"
+        android:padding="0dp"
+        android:text="@string/scringo_text_cancel_button"
+        android:textSize="18dp" />
+
+</LinearLayout>

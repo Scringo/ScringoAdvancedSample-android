@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scringo_bg"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <com.scringo.features.ScringoTitleBar
+        android:id="@+id/scringoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scringo_section"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <TextView
+                    style="@style/grayShadowedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/scringo_text_find_header"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <com.scringo.features.ScringoListItem
+                android:id="@+id/scringoFindFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.scringo.features.ScringoListItem
+                android:id="@+id/scringoSuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/scringo_section"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <TextView
+                    style="@style/grayShadowedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/scringo_text_invite_header"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <com.scringo.features.ScringoListItem
+                android:id="@+id/scringoFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.scringo.features.ScringoListItem
+                android:id="@+id/scringoTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/scringoAppTotal"
+    android:layout_gravity="center_horizontal|bottom"
+    android:padding="0dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/scringoAppBg"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/scringo_banner_bg" />
+
+    <LinearLayout
+        android:id="@+id/scringoAppLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/scringoAppIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/scringo_banner_app_empty" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/scrignoAppPriceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/scringo_banner_price_bg"
+                    android:padding="0dp" >
+
+                    <TextView
+                        android:id="@+id/scringoAppPrice"
+                        style="@style/blackShadowedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="0dp"
+                        android:ellipsize="none"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Free"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <com.scringo.utils.ScringoAutoResizeTextView
+                    android:id="@+id/scringoAppName"
+                    style="@style/boldShadowedWhiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/scrignoAppPriceLayout"
+                    android:maxLines="1"
+                    android:layout_marginRight="3dp"
+                    android:singleLine="true"
+                    android:text="afaf"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/scringoAppDescription"
+                style="@style/shadowedWhiteText"
+                android:textColor="#999"
+                android:layout_marginTop="-2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Some desc"
+                android:textSize="12dp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                >
+
+                <LinearLayout
+                    android:id="@+id/scringoAppRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scringoAppInstalls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/scringo_banner_installs" />
+
+                    <TextView
+                        android:id="@+id/scringoAppInstallsText"
+                        style="@style/darkGrayShadowedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="1,000,000+"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/scringo_banner_dash" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:paddingLeft="4dp"
+            android:paddingTop="7dp"
+            android:paddingRight="4dp">
+
+            <ImageButton
+                android:background="@null"
+                android:id="@+id/scringoAppClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scringo_banner_close" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

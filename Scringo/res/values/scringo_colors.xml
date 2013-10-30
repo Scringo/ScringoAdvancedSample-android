@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="disabled">#666</color>
+    <color name="enabled">#ffffff</color>
+    <color name="selectedCell">#1d1d1d</color>
+    <color name="scringoQuizTimerBase">#ffffff8d</color>
+    <color name="scringoQuizTimerBlink1">#ffb12626</color>
+    <color name="scringoQuizTimerBlink2">#ffd25050</color>
+    <color name="scringoQuizGameOver">#ffe47e7e</color>
+    <color name="scringoQuizCongratulations">#ffb3e06b</color>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/scringo_panel_item_selector"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/scringoUserSectionSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scringo_section"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/scringoUserSectionSectionImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/scringo_facebook_shade_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/scringoUserSectionSectionText"
+            style="@style/grayShadowedText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/scringoUserSectionSectionButton"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/scringo_black_button"
+            android:padding="0dp"
+            android:text="@string/scringo_text_follow_all_button"
+            android:textSize="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scringoUserSectionUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/scringoUserItemUserImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY" />
+
+            <com.scringo.utils.ScringoAppImage
+                android:id="@+id/scringoUserItemAppImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/scringoUserItemUserName"
+                    style="@style/whiteBoldShadowedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/scringoUserItemDistance"
+                    style="@style/grayShadowedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.scringo.features.ScringoFollowButton
+                android:id="@+id/scringoUserItemFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/scringo_dash_line"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

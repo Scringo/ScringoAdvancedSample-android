@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:minWidth="50dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/scringo_button"
+    android:gravity="center_vertical"
+    android:paddingTop="0dp" 
+    android:paddingBottom="0dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scringo_comment_on" />
+
+    <TextView
+        android:id="@+id/scringoLikeNumber"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp" />
+
+    <ProgressBar
+        android:id="@+id/scringoLikeProgress"
+        android:layout_width="15dp"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_height="15dp" />
+
+</LinearLayout>

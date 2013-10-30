@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@+id/scringoTitleHomeBg"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/scringo_title_bar_bg" />
+
+    <RelativeLayout
+        android:id="@+id/scringoTitleLeftClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scringo_home_ribbon_button" />
+
+        <RelativeLayout
+            android:layout_width="37dp"
+            android:layout_height="44dp" >
+
+            <ImageView
+                android:id="@+id/scringoIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:background="@null"
+                android:src="@drawable/scringo_activation_icon_1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scringoTitleRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/scringo_title_button"
+        android:padding="0dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scringo_title_separator" />
+
+        <ImageView
+            android:id="@+id/scringoTitleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/scringoTitleText"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:layout_toLeftOf="@id/scringoTitleRightButton"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/scringoTitleSubtitleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/scringoTitleRightButton"
+        android:layout_alignTop="@id/scringoTitleRightButton"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/scringoTitleRightButton"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/scringoTitleSubtitle1"
+            style="@style/grayShadowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/scringoTitleSubtitle2"
+            style="@style/whiteBoldShadowedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scringoTitleDone"
+        style="@style/whiteBoldShadowedText"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/scringo_blue_button"
+        android:padding="0dp"
+        android:text="@string/scringo_text_done_button"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scringo_bg"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <com.scringo.features.ScringoTitleBar
+        android:id="@+id/scringoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scringo.features.ScringoUnsignedView
+        android:id="@+id/scringoUnsigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/scringoInboxNoMessagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/scringoInboxNoMessagesArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/scringo_no_message_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scringo_no_message_env_icon" />
+
+            <TextView
+                style="@style/grayShadowedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/scringo_text_anonymous_no_messages_title" />
+
+            <TextView
+                android:id="@+id/scringoInboxNoMessagesText2"
+                style="@style/grayShadowedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scringo_text_no_messages_text2" />
+
+            <ProgressBar
+                android:id="@+id/scringoProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scringoInboxHasMessagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <com.scringo.utils.pulltorefresh.PullToRefreshListView
+            android:id="@+id/scringoList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent" />
+    </RelativeLayout>
+
+</LinearLayout>
